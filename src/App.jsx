@@ -72,15 +72,14 @@ function App() {
 
     const slides = [
         { title: "Hero", icon: Rocket },
+        // { title: "Team", icon: Users },
         { title: "Bối cảnh", icon: AlertCircle },
         { title: "Ý tưởng", icon: Zap },
         { title: "Gemini", icon: MessageSquare },
-        { title: "Claude Design", icon: Cpu },
-        { title: "Claude Coding", icon: Cpu },
+        { title: "Claude AI", icon: Cpu },
         { title: "Bảo vệ", icon: ShieldCheck },
         { title: "Invisible AI", icon: Eye },
         { title: "Metrics", icon: BarChart3 },
-        { title: "Team", icon: Users },
         { title: "Kết luận", icon: Target },
     ];
 
@@ -115,6 +114,41 @@ function App() {
             </div>
 
             <main className="scroll-container h-screen overflow-y-auto snap-y snap-mandatory">
+                {/* SLIDE 1: MEET OUR TEAM */}
+                {/* <Section id="slide-1" className="snap-start min-h-screen bg-slate-900 flex items-center py-20">
+                    <div className="w-full">
+                        <div className="text-center mb-12 px-4">
+                            <h2 className="text-3xl md:text-5xl font-black mb-4">Meet Our Team</h2>
+                            <p className="text-xl md:text-2xl text-slate-400 leading-relaxed italic max-w-3xl mx-auto">
+                                "Chúng tôi không code bằng tay tất cả, chúng tôi dẫn dắt AI để tạo ra giá trị nhanh nhất."
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 px-4 max-w-7xl mx-auto">
+                            {[
+                                { name: "Nguyễn Phan Thiên Phong", role: "Trưởng nhóm", desc: "Quản lý tiến độ và hỗ trợ các bạn hoàn thiện dự án." },
+                                { name: "Nguyễn Ngọc Quý", role: "UI Design (FE)", desc: "Thiết kế giao diện người dùng và tối ưu UX." },
+                                { name: "Hoàng Hà Vy", role: "Claude Developer", desc: "Sử dụng Claude Code tạo app (Mobile, BE)." },
+                                { name: "Trần Lê Thanh Tuyền", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." },
+                                { name: "Lê Nguyễn", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." },
+                                { name: "Lê Phan Minh Thái", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." },
+                                { name: "Hồ Hòa Hải", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." },
+                                { name: "Đinh Hải Dương", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." },
+                                { name: "Nguyễn Quang Lâm", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." },
+                                { name: "Châu Văn Tân", role: "Idea & Feedback", desc: "Cung cấp ý tưởng và phản biện tối ưu hóa." }
+                            ].map((member, idx) => (
+                                <div key={idx} className="group p-4 md:p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50 hover:bg-slate-800/80 transition-all text-center">
+                                    <div className="w-12 h-12 md:w-16 md:h-16 bg-slate-700 rounded-2xl mx-auto mb-4 flex items-center justify-center transform group-hover:rotate-6 transition-transform">
+                                        <Users className="w-6 h-6 md:w-8 md:h-8 text-slate-500" />
+                                    </div>
+                                    <h4 className="text-sm md:text-base font-bold mb-1 line-clamp-2 h-10 md:h-12 flex items-center justify-center">{member.name}</h4>
+                                    <p className="text-indigo-400 font-black text-[8px] md:text-[10px] uppercase mb-2 tracking-widest">{member.role}</p>
+                                    <p className="text-slate-400 text-[10px] md:text-xs leading-relaxed line-clamp-3">{member.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </Section> */}
+
                 {/* SLIDE 1: HERO */}
                 <Section id="slide-1" className="bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/30 snap-start h-screen">
                     <div className="text-center px-4">
@@ -161,10 +195,13 @@ function App() {
                 {/* SLIDE 2: BỐI CẢNH */}
                 <Section id="slide-2" className="snap-start h-screen bg-slate-900 flex items-center">
                     <div className="max-w-4xl mx-auto px-4">
-                        <h2 className="text-3xl md:text-5xl font-black mb-10 flex items-center gap-4">
+                        <h2 className="text-3xl md:text-5xl font-black mb-8 flex items-center gap-4">
                             <AlertCircle className="w-10 h-10 md:w-12 md:h-12 text-red-400" />
                             Khi "Ăn khỏe" là thử thách
                         </h2>
+                        <p className="text-xl text-slate-300 italic mb-10 border-l-4 border-indigo-500 pl-6 leading-relaxed">
+                            "Thực tế cho thấy phần lớn dân văn phòng đang đối mặt với tình trạng ăn uống thiếu khoa học, kéo theo nhiều rủi ro sức khỏe lâu dài. Ứng dụng trợ lý ăn uống ra đời để đồng hành, nhắc nhở và cá nhân hóa chế độ dinh dưỡng cho từng người."
+                        </p>
                         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
                             <div className="space-y-6">
                                 <div className="p-6 md:p-8 rounded-3xl bg-slate-800/50 border-t-4 border-indigo-500 shadow-xl">
@@ -178,7 +215,7 @@ function App() {
                                     <p className="text-slate-500 text-xs md:text-sm">Đứt quãng do thiếu công cụ hỗ trợ.</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col justify-center space-y-8">
+                            <div className="flex flex-col space-y-8 pt-10">
                                 <div className="flex gap-6">
                                     <div className="w-12 h-12 rounded-2xl bg-red-500/10 flex items-center justify-center shrink-0">
                                         <span className="text-red-400 font-bold text-xl">!</span>
@@ -196,9 +233,6 @@ function App() {
                                         <h4 className="text-xl font-bold mb-1">Decision Paralysis</h4>
                                         <p className="text-slate-400">Mất 20 phút mỗi trưa chỉ để phân vân chọn món.</p>
                                     </div>
-                                </div>
-                                <div className="p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl">
-                                    <p className="text-emerald-400 text-sm font-semibold italic">📈 45% người dùng Wearables VN tìm kiếm sự tự động hóa.</p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +252,7 @@ function App() {
                                 <div className="p-8 bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-3xl relative">
                                     <MessageSquare className="absolute -top-4 -left-4 w-10 h-10 text-indigo-500 bg-slate-900 rounded-lg p-2" />
                                     <p className="text-2xl text-slate-200 italic leading-relaxed">
-                                        "Hôm nay ăn gì thì được nhỉ?"
+                                        "Hôm nay ăn gì?"
                                     </p>
                                 </div>
                             </div>
@@ -267,54 +301,53 @@ function App() {
                     </div>
                 </Section>
 
-                {/* SLIDE 5: CLAUDE DESIGN */}
-                <Section id="slide-5" className="snap-start h-screen">
-                    <div className="grid md:grid-cols-2 gap-16 items-center px-4">
+                {/* SLIDE 5: CLAUDE AI */}
+                <Section id="slide-5" className="snap-start min-h-screen bg-slate-900 py-12">
+                    <div className="grid md:grid-cols-2 gap-12 items-center px-4 max-w-6xl mx-auto">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-black mb-8">Thiết kế cùng Claude</h2>
-                            <p className="text-xl text-slate-400 mb-10 leading-relaxed">Chuyển hóa các Rule từ Gemini thành cấu trúc hệ thống hoàn chỉnh.</p>
-                            <div className="space-y-8">
-                                <div className="flex gap-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center shrink-0 border border-indigo-500/20">
-                                        <Eye className="text-indigo-400 w-8 h-8" />
+                            <h2 className="text-4xl md:text-5xl font-black mb-6">Claude AI: Triển khai</h2>
+                            <p className="text-lg text-slate-400 mb-8 leading-relaxed">Hiện thực hóa ý tưởng thành giải pháp kỹ thuật toàn diện.</p>
+
+                            <div className="space-y-6">
+                                <div className="flex gap-4 p-4 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+                                    <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 border border-indigo-500/20">
+                                        <Eye className="text-indigo-400 w-5 h-5" />
                                     </div>
                                     <div>
-                                        <h4 className="text-xl font-bold text-white mb-2">UI/UX Wireframing</h4>
-                                        <p className="text-slate-400">Tạo cấu trúc màn hình Map và Dashboard dinh dưỡng trực quan.</p>
+                                        <h4 className="font-bold text-white">Thiết kế hệ thống</h4>
+                                        <p className="text-slate-400 text-sm">Wireframe UI & Schema PostgreSQL tối ưu.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-6">
-                                    <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
-                                        <BarChart3 className="text-emerald-400 w-8 h-8" />
+                                <div className="flex gap-4 p-4 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+                                    <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
+                                        <Cpu className="text-emerald-400 w-5 h-5" />
                                     </div>
                                     <div>
-                                        <h4 className="text-xl font-bold text-white mb-2">Schema PostgreSQL</h4>
-                                        <p className="text-slate-400">Thiết lập quan hệ User, Allergens & Interaction History.</p>
+                                        <h4 className="font-bold text-white">Full-stack Development</h4>
+                                        <p className="text-slate-400 text-sm">React Native Mobile, NestJS API & Google Maps.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div className="relative">
                             <div className="absolute inset-0 bg-indigo-500/10 blur-[80px] -z-10" />
-                            <div className="bg-slate-950 p-6 rounded-3xl border border-slate-700 font-mono text-xs md:text-sm overflow-hidden shadow-2xl">
-                                <div className="flex items-center gap-2 mb-6 border-b border-slate-800 pb-4">
+                            <div className="bg-slate-950 p-6 rounded-3xl border border-slate-700 font-mono text-[10px] md:text-xs overflow-hidden shadow-2xl">
+                                <div className="flex items-center gap-2 mb-4 border-b border-slate-800 pb-3">
                                     <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-red-500/50" />
-                                        <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-                                        <div className="w-3 h-3 rounded-full bg-green-500/50" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-500/50" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-green-500/50" />
                                     </div>
-                                    <span className="text-slate-600 text-[10px] ml-2">DATA_SCHEMA.TS</span>
+                                    <span className="text-slate-600 text-[10px] ml-2 font-sans italic">// Claude thực thi logic tinh vi</span>
                                 </div>
-                                <pre className="text-indigo-300 leading-relaxed">
+                                <pre className="text-indigo-300/90 leading-relaxed">
                                     {`interface UserProfile {
-  id: UUID;
   goal: 'LOSE' | 'MAINTAIN' | 'GAIN';
   allergens: Allergen[];
   tasteProfile: TastePreferences;
-  matchThreshold: number;
 }
 
-// Implicit Learning Score
 const calculateMatch = (user, dish) => {
   if (dish.contains(user.allergens)) return 0;
   return baseScore * user.tasteProfileFactor;
@@ -325,48 +358,8 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 6: CLAUDE CODING */}
-                <Section id="slide-6" className="snap-start h-screen bg-slate-900">
-                    <div className="text-center mb-16 px-4">
-                        <h2 className="text-4xl md:text-5xl font-black mb-6">Kỹ sư Full-stack 24/7</h2>
-                        <p className="text-xl text-slate-400 max-w-2xl mx-auto">Claude Code thực thi mượt mà các module phức tạp chỉ trong tích tắc.</p>
-                    </div>
-                    <div className="grid md:grid-cols-3 gap-8 px-4">
-                        <div className="p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-indigo-500 transition-all group">
-                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-4 md:mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
-                                <Rocket className="text-indigo-400 w-5 h-5 md:w-6 md:h-6" />
-                            </div>
-                            <h4 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Frontend</h4>
-                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">React Native mượt mà, tích hợp HealthKit hoàn hảo để lấy dữ liệu sức khỏe.</p>
-                            <div className="p-2 bg-slate-900 rounded-lg text-[9px] md:text-[10px] font-mono text-indigo-300">
-                                npx expo start --ios
-                            </div>
-                        </div>
-                        <div className="p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-emerald-500 transition-all group">
-                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-4 md:mb-6 border border-emerald-500/20 group-hover:scale-110 transition-transform">
-                                <Cpu className="text-emerald-400 w-5 h-5 md:w-6 md:h-6" />
-                            </div>
-                            <h4 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Backend</h4>
-                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">NestJS API xử lý Logic Match Score, tối ưu hóa Database PostgreSQL.</p>
-                            <div className="p-2 bg-slate-900 rounded-lg text-[9px] md:text-[10px] font-mono text-emerald-300">
-                                docker-compose up -d
-                            </div>
-                        </div>
-                        <div className="p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-indigo-500 transition-all group">
-                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-4 md:mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
-                                <MapPin className="text-indigo-400 w-5 h-5 md:w-6 md:h-6" />
-                            </div>
-                            <h4 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Maps Integration</h4>
-                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">Kết nối Google Maps API Real-time để định vị các quán ăn quanh vị trí User.</p>
-                            <div className="p-2 bg-slate-900 rounded-lg text-[9px] md:text-[10px] font-mono text-indigo-300">
-                                GET /api/places/nearby
-                            </div>
-                        </div>
-                    </div>
-                </Section>
-
-                {/* SLIDE 7: BẢO VỆ */}
-                <Section id="slide-7" className="snap-start h-screen bg-indigo-950/20">
+                {/* SLIDE 6: BẢO VỆ */}
+                <Section id="slide-6" className="snap-start h-screen bg-indigo-950/20">
                     <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row gap-16 items-center">
                         <div className="md:w-1/2">
                             <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-2xl inline-block mb-6">
@@ -396,8 +389,8 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 8: INVISIBLE AI */}
-                <Section id="slide-8" className="snap-start h-screen bg-slate-900 flex items-center">
+                {/* SLIDE 7: INVISIBLE AI */}
+                <Section id="slide-7" className="snap-start h-screen bg-slate-900 flex items-center">
                     <div className="max-w-5xl mx-auto px-4">
                         <div className="text-center mb-12 md:mb-16">
                             <h2 className="text-4xl md:text-6xl font-black mb-4">Invisible AI</h2>
@@ -423,8 +416,8 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 9: METRICS */}
-                <Section id="slide-9" className="snap-start min-h-screen py-6 md:py-10 flex items-center justify-center">
+                {/* SLIDE 8: METRICS */}
+                <Section id="slide-8" className="snap-start min-h-screen py-6 md:py-10 flex items-center justify-center">
                     <div className="max-w-4xl mx-auto px-4">
                         <div className="text-center mb-6 md:mb-8">
                             <h2 className="text-2xl md:text-4xl font-black mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">Sức mạnh AI-Driven</h2>
@@ -453,56 +446,31 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 10: TEAM */}
-                <Section id="slide-10" className="snap-start h-screen bg-slate-900 flex items-center">
-                    <div className="text-center mb-12 md:mb-16 px-4">
-                        <h2 className="text-3xl md:text-5xl font-black mb-4">Đội ngũ Điều phối AI</h2>
-                        <p className="text-xl md:text-2xl text-slate-400 leading-relaxed italic max-w-3xl mx-auto">
-                            "Chúng tôi không code bằng tay tất cả, chúng tôi dẫn dắt AI để tạo ra giá trị nhanh nhất."
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-3 gap-8 px-4 max-w-6xl mx-auto">
-                        {[
-                            { name: "Bạn A", role: "PO & AI Architect", desc: "Master Prompting, định hình Logic sản phẩm." },
-                            { name: "Bạn B", role: "Lead Developer", desc: "Giám sát và tối ưu Code từ Claude." },
-                            { name: "Bạn C", role: "BA", desc: "Nghiên cứu Insight sức khỏe & chuẩn nghiệp vụ." }
-                        ].map((member, idx) => (
-                            <div key={idx} className="group p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700/50 hover:bg-slate-800/80 transition-all text-center">
-                                <div className="w-16 h-16 md:w-20 md:h-20 bg-slate-700 rounded-3xl mx-auto mb-6 md:mb-8 flex items-center justify-center transform group-hover:rotate-6 transition-transform">
-                                    <Users className="w-8 h-8 md:w-10 md:h-10 text-slate-500" />
-                                </div>
-                                <h4 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{member.name}</h4>
-                                <p className="text-indigo-400 font-black text-[10px] md:text-xs uppercase mb-4 md:mb-6 tracking-widest">{member.role}</p>
-                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{member.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </Section>
 
-                {/* SLIDE 11: KẾT LUẬN */}
-                <Section id="slide-11" className="snap-start h-screen bg-gradient-to-t from-indigo-900/40 to-slate-900">
+                {/* SLIDE 9: KẾT LUẬN */}
+                <Section id="slide-9" className="snap-start h-screen bg-gradient-to-t from-indigo-900/40 to-slate-900">
                     <div className="text-center max-w-4xl mx-auto px-4">
                         <motion.div
                             initial={{ rotate: 180, scale: 0 }}
                             whileInView={{ rotate: 0, scale: 1 }}
                             transition={{ type: 'spring', damping: 10 }}
-                            className="w-24 h-24 bg-indigo-500 rounded-full mx-auto mb-10 flex items-center justify-center shadow-[0_0_50px_rgba(99,102,241,0.5)]"
+                            className="w-24 h-24 bg-indigo-500 rounded-full mx-auto mb-2 flex items-center justify-center shadow-[0_0_50px_rgba(99,102,241,0.5)]"
                         >
                             <Rocket className="w-12 h-12 text-white" />
                         </motion.div>
-                        <h2 className="text-5xl md:text-8xl font-black mb-8">Tầm nhìn 2026</h2>
+                        <h2 className="text-5xl md:text-6xl font-black mb-8">Tầm nhìn 2026</h2>
                         <p className="text-2xl text-slate-300 mb-16 leading-relaxed">
                             Smart Nutrition Assistant - <span className="text-indigo-400 font-bold">Người đồng hành thầm lặng</span> cho sức khỏe Việt.
                         </p>
 
                         <div className="bg-slate-950/80 p-8 md:p-12 rounded-[40px] border border-slate-800 text-left mb-16 shadow-2xl relative">
-                            <div className="flex items-start gap-6">
-                                <Heart className="w-10 h-10 text-red-500 fill-red-500 shrink-0 mt-2" />
+                            <div className="flex items-center gap-6">
+                                <div className="p-4 bg-indigo-500/20 rounded-2xl">
+                                    <Rocket className="w-8 h-8 text-indigo-400" />
+                                </div>
                                 <div>
-                                    <p className="text-xl text-slate-300 italic mb-6">
-                                        "Khảo sát nội bộ: Anh em công ty và dân văn phòng nói chung hiện đang gặp nhiều issue liên quan đến dạ dày, béo phì và stress do ăn uống sai cách."
-                                    </p>
-                                    <p className="text-indigo-400 font-bold">🎯 Trạng thái: MVP đã sẵn sàng. Hoàn thiện 100% trong 4 tuần tới.</p>
+                                    <h4 className="text-2xl font-bold text-white mb-2">Trạng thái dự án</h4>
+                                    <p className="text-indigo-400 font-bold">🚀 Đang trong giai đoạn phát triển & hoàn thiện các tính năng cốt lõi.</p>
                                 </div>
                             </div>
                         </div>
