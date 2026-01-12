@@ -172,7 +172,7 @@ function App() {
                                     <Target className="w-5 h-5 md:w-6 md:h-6 text-indigo-400" />
                                 </div>
                                 <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-white">Vị thế</h3>
-                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">Tiên pioneer kỷ nguyên AI-Agent trong chăm sóc sức khỏe.</p>
+                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">Tiên phong kỷ nguyên AI-Agent trong chăm sóc sức khỏe.</p>
                             </div>
                             <div className="p-5 md:p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-secondary/50 transition-all group">
                                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-secondary/20 transition-colors">
