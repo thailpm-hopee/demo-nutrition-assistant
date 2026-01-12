@@ -16,7 +16,7 @@ body {
 }
 
 .slide-section {
-  @apply h-screen snap-start relative flex flex-col items-center justify-center p-8;
+  @apply h-screen snap-start relative flex flex-col items-center justify-center p-4 md:p-8;
 }
 
 /* Custom bar chart styles */

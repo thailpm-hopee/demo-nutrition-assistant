@@ -51,10 +51,10 @@ const ChatBubble = ({ sender, text, delay = 0 }) => (
 );
 
 const MetricBar = ({ label, value, color, percentage }) => (
-    <div className="mb-4 md:mb-6">
-        <div className="flex justify-between mb-1.5">
-            <span className="text-base md:text-lg font-semibold">{label}</span>
-            <span className="text-base md:text-lg font-bold text-indigo-400">{value}</span>
+    <div className="mb-3 md:mb-4">
+        <div className="flex justify-between mb-1">
+            <span className="text-sm md:text-base font-semibold">{label}</span>
+            <span className="text-sm md:text-base font-bold text-indigo-400">{value}</span>
         </div>
         <div className="bar-container h-4 bg-slate-800 rounded-full overflow-hidden">
             <motion.div
@@ -132,27 +132,27 @@ function App() {
                         <p className="text-xl md:text-3xl font-medium text-slate-300 mb-12 max-w-3xl mx-auto">
                             Trợ lý dinh dưỡng cá nhân hóa – <span className="text-indigo-400">Thấu hiểu không cần hỏi.</span>
                         </p>
-                        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
-                            <div className="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 transition-all group">
-                                <div className="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-4 group-hover:bg-indigo-500/20 transition-colors">
-                                    <Target className="w-6 h-6 text-indigo-400" />
+                        <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto text-left">
+                            <div className="p-5 md:p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 transition-all group">
+                                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-indigo-500/20 transition-colors">
+                                    <Target className="w-5 h-5 md:w-6 md:h-6 text-indigo-400" />
                                 </div>
-                                <h3 className="text-xl font-bold mb-2 text-white">Vị thế</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed">Tiên phong kỷ nguyên AI-Agent trong chăm sóc sức khỏe.</p>
+                                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-white">Vị thế</h3>
+                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">Tiên pioneer kỷ nguyên AI-Agent trong chăm sóc sức khỏe.</p>
                             </div>
-                            <div className="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-secondary/50 transition-all group">
-                                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-                                    <Cpu className="w-6 h-6 text-secondary" />
+                            <div className="p-5 md:p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-secondary/50 transition-all group">
+                                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-secondary/20 transition-colors">
+                                    <Cpu className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
                                 </div>
-                                <h3 className="text-xl font-bold mb-2 text-white">Cốt lõi</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed">Dữ liệu Wearables + Google Maps API + LLMs Reasoning.</p>
+                                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-white">Cốt lõi</h3>
+                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">Dữ liệu Wearables + Google Maps API + LLMs Reasoning.</p>
                             </div>
-                            <div className="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 transition-all group">
-                                <div className="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-4 group-hover:bg-indigo-500/20 transition-colors">
-                                    <MessageSquare className="w-6 h-6 text-indigo-400" />
+                            <div className="p-5 md:p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-indigo-500/50 transition-all group">
+                                <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-indigo-500/20 transition-colors">
+                                    <MessageSquare className="w-5 h-5 md:w-6 md:h-6 text-indigo-400" />
                                 </div>
-                                <h3 className="text-xl font-bold mb-2 text-white">Thông điệp</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed">"Ăn đúng những gì cơ thể cần, tại nơi bạn đang đứng."</p>
+                                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-white">Thông điệp</h3>
+                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">"Ăn đúng những gì cơ thể cần, tại nơi bạn đang đứng."</p>
                             </div>
                         </div>
                     </div>
@@ -167,15 +167,15 @@ function App() {
                         </h2>
                         <div className="grid md:grid-cols-2 gap-8 md:gap-10">
                             <div className="space-y-6">
-                                <div className="p-8 rounded-3xl bg-slate-800/50 border-t-4 border-indigo-500 shadow-xl">
-                                    <div className="text-5xl font-black text-indigo-400 mb-2">55%</div>
-                                    <p className="text-slate-300 font-medium">Dân văn phòng muốn ăn healthy</p>
-                                    <p className="text-slate-500 text-sm">Nỗ lực cải thiện sức khỏe mỗi ngày.</p>
+                                <div className="p-6 md:p-8 rounded-3xl bg-slate-800/50 border-t-4 border-indigo-500 shadow-xl">
+                                    <div className="text-4xl md:text-5xl font-black text-indigo-400 mb-1">55%</div>
+                                    <p className="text-slate-300 font-medium text-sm md:text-base">Dân văn phòng muốn ăn healthy</p>
+                                    <p className="text-slate-500 text-xs md:text-sm">Nỗ lực cải thiện sức khỏe mỗi ngày.</p>
                                 </div>
-                                <div className="p-8 rounded-3xl bg-slate-800/50 border-t-4 border-red-500 shadow-xl">
-                                    <div className="text-5xl font-black text-red-500 mb-2">10%</div>
-                                    <p className="text-slate-300 font-medium">Duy trì được quá 1 tháng</p>
-                                    <p className="text-slate-500 text-sm">Đứt quãng do thiếu công cụ hỗ trợ.</p>
+                                <div className="p-6 md:p-8 rounded-3xl bg-slate-800/50 border-t-4 border-red-500 shadow-xl">
+                                    <div className="text-4xl md:text-5xl font-black text-red-500 mb-1">10%</div>
+                                    <p className="text-slate-300 font-medium text-sm md:text-base">Duy trì được quá 1 tháng</p>
+                                    <p className="text-slate-500 text-xs md:text-sm">Đứt quãng do thiếu công cụ hỗ trợ.</p>
                                 </div>
                             </div>
                             <div className="flex flex-col justify-center space-y-8">
@@ -214,11 +214,11 @@ function App() {
                                 <div className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/20 text-indigo-400 text-sm font-bold mb-6 tracking-wider uppercase">
                                     The Spark
                                 </div>
-                                <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">Khởi nguồn từ một suy nghĩ</h2>
+                                <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">Khởi nguồn từ một câu hỏi</h2>
                                 <div className="p-8 bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-3xl relative">
                                     <MessageSquare className="absolute -top-4 -left-4 w-10 h-10 text-indigo-500 bg-slate-900 rounded-lg p-2" />
                                     <p className="text-2xl text-slate-200 italic leading-relaxed">
-                                        "Giá như có một cái app biết mình vừa đi bộ bao nhiêu bước để gợi ý món ăn trưa nay phù hợp."
+                                        "Hôm nay ăn gì thì được nhỉ?"
                                     </p>
                                 </div>
                             </div>
@@ -332,33 +332,33 @@ const calculateMatch = (user, dish) => {
                         <p className="text-xl text-slate-400 max-w-2xl mx-auto">Claude Code thực thi mượt mà các module phức tạp chỉ trong tích tắc.</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8 px-4">
-                        <div className="p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-indigo-500 transition-all group">
-                            <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
-                                <Rocket className="text-indigo-400 w-6 h-6" />
+                        <div className="p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-indigo-500 transition-all group">
+                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-4 md:mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                                <Rocket className="text-indigo-400 w-5 h-5 md:w-6 md:h-6" />
                             </div>
-                            <h4 className="text-2xl font-bold mb-4">Frontend</h4>
-                            <p className="text-slate-400 text-sm mb-6">React Native mượt mà, tích hợp HealthKit hoàn hảo để lấy dữ liệu sức khỏe.</p>
-                            <div className="p-2 bg-slate-900 rounded-lg text-[10px] font-mono text-indigo-300">
+                            <h4 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Frontend</h4>
+                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">React Native mượt mà, tích hợp HealthKit hoàn hảo để lấy dữ liệu sức khỏe.</p>
+                            <div className="p-2 bg-slate-900 rounded-lg text-[9px] md:text-[10px] font-mono text-indigo-300">
                                 npx expo start --ios
                             </div>
                         </div>
-                        <div className="p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-emerald-500 transition-all group">
-                            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 border border-emerald-500/20 group-hover:scale-110 transition-transform">
-                                <Cpu className="text-emerald-400 w-6 h-6" />
+                        <div className="p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-emerald-500 transition-all group">
+                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-4 md:mb-6 border border-emerald-500/20 group-hover:scale-110 transition-transform">
+                                <Cpu className="text-emerald-400 w-5 h-5 md:w-6 md:h-6" />
                             </div>
-                            <h4 className="text-2xl font-bold mb-4">Backend</h4>
-                            <p className="text-slate-400 text-sm mb-6">NestJS API xử lý Logic Match Score, tối ưu hóa Database PostgreSQL.</p>
-                            <div className="p-2 bg-slate-900 rounded-lg text-[10px] font-mono text-emerald-300">
+                            <h4 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Backend</h4>
+                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">NestJS API xử lý Logic Match Score, tối ưu hóa Database PostgreSQL.</p>
+                            <div className="p-2 bg-slate-900 rounded-lg text-[9px] md:text-[10px] font-mono text-emerald-300">
                                 docker-compose up -d
                             </div>
                         </div>
-                        <div className="p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-indigo-500 transition-all group">
-                            <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
-                                <MapPin className="text-indigo-400 w-6 h-6" />
+                        <div className="p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700 hover:border-indigo-500 transition-all group">
+                            <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-4 md:mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform">
+                                <MapPin className="text-indigo-400 w-5 h-5 md:w-6 md:h-6" />
                             </div>
-                            <h4 className="text-2xl font-bold mb-4">Maps Integration</h4>
-                            <p className="text-slate-400 text-sm mb-6">Kết nối Google Maps API Real-time để định vị các quán ăn quanh vị trí User.</p>
-                            <div className="p-2 bg-slate-900 rounded-lg text-[10px] font-mono text-indigo-300">
+                            <h4 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Maps Integration</h4>
+                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">Kết nối Google Maps API Real-time để định vị các quán ăn quanh vị trí User.</p>
+                            <div className="p-2 bg-slate-900 rounded-lg text-[9px] md:text-[10px] font-mono text-indigo-300">
                                 GET /api/places/nearby
                             </div>
                         </div>
@@ -401,52 +401,52 @@ const calculateMatch = (user, dish) => {
                     <div className="max-w-5xl mx-auto px-4">
                         <div className="text-center mb-12 md:mb-16">
                             <h2 className="text-4xl md:text-6xl font-black mb-4">Invisible AI</h2>
-                            <p className="text-xl md:text-2xl text-slate-400 font-light tracking-wide">Thấu hiểu qua từng lần lướt.</p>
+                            <p className="text-xl md:text-2xl text-slate-400 font-light tracking-wide">Khi những hành động nhỏ trở thành ngôn ngữ để AI thấu hiểu bạn sâu sắc hơn.</p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-12">
-                            <div className="group p-10 bg-slate-800/30 rounded-[40px] border border-slate-700/50 hover:bg-slate-800/50 transition-all text-center">
-                                <div className="w-16 h-16 bg-indigo-500/10 rounded-full flex items-center justify-center mx-auto mb-8 border border-indigo-500/20">
-                                    <Eye className="w-8 h-8 text-indigo-400" />
+                            <div className="group p-6 md:p-8 bg-slate-800/30 rounded-[32px] md:rounded-[40px] border border-slate-700/50 hover:bg-slate-800/50 transition-all text-center">
+                                <div className="w-12 h-12 md:w-16 md:h-16 bg-indigo-500/10 rounded-full flex items-center justify-center mx-auto mb-6 md:mb-8 border border-indigo-500/20">
+                                    <Eye className="w-6 h-6 md:w-8 md:h-8 text-indigo-400" />
                                 </div>
-                                <h4 className="text-2xl font-bold mb-6">Học hành vi ngầm</h4>
-                                <p className="text-slate-400 leading-relaxed">Nếu User liên tục lướt qua nhanh các món dầu mỡ, AI tự động trừ Match Score cho các quán Fastfood trong tương lai.</p>
+                                <h4 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Học hành vi ngầm</h4>
+                                <p className="text-slate-400 text-sm md:text-base leading-relaxed">Nếu User liên tục lướt qua nhanh các món dầu mỡ, AI tự động trừ Match Score cho các quán Fastfood trong tương lai.</p>
                             </div>
-                            <div className="group p-10 bg-slate-800/30 rounded-[40px] border border-slate-700/50 hover:bg-slate-800/50 transition-all text-center">
-                                <div className="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-8 border border-emerald-500/20">
-                                    <BarChart3 className="w-8 h-8 text-emerald-400" />
+                            <div className="group p-6 md:p-8 bg-slate-800/30 rounded-[32px] md:rounded-[40px] border border-slate-700/50 hover:bg-slate-800/50 transition-all text-center">
+                                <div className="w-12 h-12 md:w-16 md:h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-6 md:mb-8 border border-emerald-500/20">
+                                    <BarChart3 className="w-6 h-6 md:w-8 md:h-8 text-emerald-400" />
                                 </div>
-                                <h4 className="text-2xl font-bold mb-6">Match Score Dynamic</h4>
-                                <div className="text-5xl font-black text-emerald-400 mb-6 group-hover:scale-110 transition-transform inline-block">0 - 100%</div>
-                                <p className="text-slate-400 leading-relaxed">Điểm tương thích hiển thị trực quan trên bản đồ giúp User quyết định trong 3 giây.</p>
+                                <h4 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Match Score Dynamic</h4>
+                                <div className="text-4xl md:text-5xl font-black text-emerald-400 mb-4 md:mb-6 group-hover:scale-110 transition-transform inline-block">0 - 100%</div>
+                                <p className="text-slate-400 text-sm md:text-base leading-relaxed">Điểm tương thích hiển và tag giúp User quyết định nhanh chóng.</p>
                             </div>
                         </div>
                     </div>
                 </Section>
 
                 {/* SLIDE 9: METRICS */}
-                <Section id="slide-9" className="snap-start min-h-screen py-10 md:py-20 flex items-center justify-center">
+                <Section id="slide-9" className="snap-start min-h-screen py-6 md:py-10 flex items-center justify-center">
                     <div className="max-w-4xl mx-auto px-4">
-                        <div className="text-center mb-8 md:mb-12">
-                            <h2 className="text-3xl md:text-5xl font-black mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">Sức mạnh AI-Driven</h2>
-                            <p className="text-lg md:text-xl text-slate-400">Hiệu suất phi thường: Tiết kiệm thời gian thực thi.</p>
+                        <div className="text-center mb-6 md:mb-8">
+                            <h2 className="text-2xl md:text-4xl font-black mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">Sức mạnh AI-Driven</h2>
+                            <p className="text-base md:text-lg text-slate-400">Hiệu suất phi thường: Tiết kiệm thời gian thực thi.</p>
                         </div>
-                        <div className="space-y-4 md:space-y-6 bg-slate-800/40 p-5 md:p-8 rounded-[32px] border border-slate-700/50 backdrop-blur-md">
+                        <div className="space-y-3 md:space-y-4 bg-slate-800/40 p-4 md:p-6 rounded-[24px] border border-slate-700/50 backdrop-blur-md">
                             <MetricBar label="Quy trình truyền thống" value="120 Giờ" percentage={100} color="bg-slate-600" />
                             <MetricBar label="Phát triển cùng AI Agent" value="16 Giờ" percentage={14} color="bg-gradient-to-r from-indigo-500 to-emerald-400 shadow-[0_0_20px_rgba(99,102,241,0.5)]" />
 
-                            <div className="mt-8 md:mt-12 text-center">
+                            <div className="mt-6 md:mt-8 text-center">
                                 <motion.div
                                     initial={{ scale: 0.9 }}
                                     whileInView={{ scale: 1 }}
-                                    className="inline-block p-6 md:p-10 rounded-[32px] md:rounded-[40px] bg-slate-900 border-2 border-indigo-500/50"
+                                    className="inline-block p-4 md:p-6 rounded-[24px] md:rounded-[32px] bg-slate-900 border-2 border-indigo-500/50"
                                 >
-                                    <p className="text-5xl md:text-7xl font-black text-white leading-none">87%</p>
-                                    <p className="text-indigo-400 font-bold text-lg md:text-xl uppercase tracking-tighter mt-2">Thời gian được tối ưu</p>
+                                    <p className="text-4xl md:text-6xl font-black text-white leading-none">87%</p>
+                                    <p className="text-indigo-400 font-bold text-base md:text-lg uppercase tracking-tighter mt-1">Thời gian được tối ưu</p>
                                 </motion.div>
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mt-8 md:mt-10 text-[10px] md:text-sm font-bold text-slate-400">
-                                    <div className="p-3 bg-indigo-500/5 rounded-xl border border-indigo-500/10">IDEATION: 80% mượt</div>
-                                    <div className="p-3 bg-emerald-500/5 rounded-xl border border-emerald-500/10">CODING: 90% nhanh</div>
-                                    <div className="p-3 bg-indigo-500/5 rounded-xl border border-indigo-500/10">DB DESIGN: 80% chuẩn</div>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3 mt-6 md:mt-8 text-[10px] md:text-xs font-bold text-slate-400">
+                                    <div className="p-2 bg-indigo-500/5 rounded-xl border border-indigo-500/10">IDEATION: 80% mượt</div>
+                                    <div className="p-2 bg-emerald-500/5 rounded-xl border border-emerald-500/10">CODING: 90% nhanh</div>
+                                    <div className="p-2 bg-indigo-500/5 rounded-xl border border-indigo-500/10">DB DESIGN: 80% chuẩn</div>
                                 </div>
                             </div>
                         </div>
@@ -467,13 +467,13 @@ const calculateMatch = (user, dish) => {
                             { name: "Bạn B", role: "Lead Developer", desc: "Giám sát và tối ưu Code từ Claude." },
                             { name: "Bạn C", role: "BA", desc: "Nghiên cứu Insight sức khỏe & chuẩn nghiệp vụ." }
                         ].map((member, idx) => (
-                            <div key={idx} className="group p-8 bg-slate-800/40 rounded-3xl border border-slate-700/50 hover:bg-slate-800/80 transition-all text-center">
-                                <div className="w-24 h-24 bg-slate-700 rounded-3xl mx-auto mb-8 flex items-center justify-center transform group-hover:rotate-6 transition-transform">
-                                    <Users className="w-12 h-12 text-slate-500" />
+                            <div key={idx} className="group p-6 md:p-8 bg-slate-800/40 rounded-3xl border border-slate-700/50 hover:bg-slate-800/80 transition-all text-center">
+                                <div className="w-16 h-16 md:w-20 md:h-20 bg-slate-700 rounded-3xl mx-auto mb-6 md:mb-8 flex items-center justify-center transform group-hover:rotate-6 transition-transform">
+                                    <Users className="w-8 h-8 md:w-10 md:h-10 text-slate-500" />
                                 </div>
-                                <h4 className="text-2xl font-bold mb-2">{member.name}</h4>
-                                <p className="text-indigo-400 font-black text-sm uppercase mb-6 tracking-widest">{member.role}</p>
-                                <p className="text-slate-400 text-sm leading-relaxed">{member.desc}</p>
+                                <h4 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{member.name}</h4>
+                                <p className="text-indigo-400 font-black text-[10px] md:text-xs uppercase mb-4 md:mb-6 tracking-widest">{member.role}</p>
+                                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{member.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -506,14 +506,6 @@ const calculateMatch = (user, dish) => {
                                 </div>
                             </div>
                         </div>
-
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-12 py-5 bg-indigo-500 rounded-2xl font-black text-xl hover:bg-indigo-400 transition-colors shadow-[0_10px_30px_rgba(99,102,241,0.3)]"
-                        >
-                            Cảm ơn Hội đồng!
-                        </motion.button>
                     </div>
                 </Section>
             </main>
