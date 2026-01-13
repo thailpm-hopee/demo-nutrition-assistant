@@ -86,6 +86,7 @@ function App() {
         // { title: "Team", icon: Users },
         { title: "Bối cảnh", icon: AlertCircle },
         { title: "Ý tưởng", icon: Zap },
+        { title: "So sánh", icon: BarChart3 },
         { title: "Gemini", icon: MessageSquare },
         { title: "Claude AI", icon: Cpu },
         { title: "Bảo vệ", icon: ShieldCheck },
@@ -312,8 +313,57 @@ function App() {
                     </div>
                 </Section>
 
-                {/* SLIDE 4: GEMINI */}
+                {/* SLIDE 4: SO SÁNH GIẢI PHÁP */}
                 <Section id="slide-4" className="snap-start h-screen bg-slate-50 dark:bg-slate-900 flex items-center">
+                    <div className="max-w-6xl mx-auto px-4 w-full">
+                        <div className="text-center mb-10">
+                            <h2 className="text-3xl md:text-5xl font-black mb-4 text-slate-900 dark:text-white">Tại sao cần giải pháp mới?</h2>
+                            <p className="text-slate-600 dark:text-slate-400 font-medium">So sánh Smart Nutrition Assistant với các ứng dụng hiện nay.</p>
+                        </div>
+
+                        <div className="overflow-x-auto rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xl bg-white dark:bg-slate-950/50 backdrop-blur-sm">
+                            <table className="w-full text-left border-collapse">
+                                <thead>
+                                    <tr className="bg-slate-100 dark:bg-slate-800/50">
+                                        <th className="p-4 md:p-6 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">Tiêu chí lựa chọn</th>
+                                        <th className="p-4 md:p-6 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">App truyền thống<br />(Grab, ShopeeFood)</th>
+                                        <th className="p-4 md:p-6 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">Google Maps</th>
+                                        <th className="p-4 md:p-6 text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 border-b border-slate-200 dark:border-slate-800 bg-indigo-500/5">Smart Nutrition Assistant</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-sm md:text-base">
+                                    <tr className="group hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                        <td className="p-4 md:p-6 font-bold text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800/50">Mục tiêu chính</td>
+                                        <td className="p-4 md:p-6 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/50">Tối ưu <b>bán hàng & giao dịch</b></td>
+                                        <td className="p-4 md:p-6 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/50">Tối ưu <b>tìm kiếm địa điểm</b></td>
+                                        <td className="p-4 md:p-6 font-medium text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800/50 bg-indigo-500/5">Tối ưu <b>quyết định ăn uống</b> phù hợp sức khỏe cá nhân</td>
+                                    </tr>
+                                    <tr className="group hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                        <td className="p-4 md:p-6 font-bold text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800/50">Cách gợi ý</td>
+                                        <td className="p-4 md:p-6 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/50">Bestseller, quảng cáo, lịch sử đặt</td>
+                                        <td className="p-4 md:p-6 text-slate-600 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/50">Rating, khoảng cách, từ khóa</td>
+                                        <td className="p-4 md:p-6 font-medium text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800/50 bg-indigo-500/5"><b>Match Score</b> + vị trí + ngữ cảnh</td>
+                                    </tr>
+                                    <tr className="group hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                        <td className="p-4 md:p-6 font-bold text-slate-700 dark:text-slate-300 border-b border-slate-100 dark:border-slate-800/50">Cá nhân hóa sức khỏe</td>
+                                        <td className="p-4 md:p-6 text-red-500 border-b border-slate-100 dark:border-slate-800/50">❌ Không</td>
+                                        <td className="p-4 md:p-6 text-red-500 border-b border-slate-100 dark:border-slate-800/50">❌ Không</td>
+                                        <td className="p-4 md:p-6 font-medium text-emerald-500 border-b border-slate-100 dark:border-slate-800/50 bg-indigo-500/5">✅ Có (mục tiêu, calo, dị ứng, khẩu vị)</td>
+                                    </tr>
+                                    <tr className="group hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                        <td className="p-4 md:p-6 font-bold text-slate-700 dark:text-slate-300">Decision support</td>
+                                        <td className="p-4 md:p-6 text-slate-500 border-b border-slate-100 dark:border-slate-800/50">❌ Danh sách dài → mệt mỏi</td>
+                                        <td className="p-4 md:p-6 text-slate-500 border-b border-slate-100 dark:border-slate-800/50">❌ Người dùng tự suy luận</td>
+                                        <td className="p-4 md:p-6 font-medium text-emerald-500 bg-indigo-500/5">✅ Gợi ý ít – đúng – có giải thích</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </Section>
+
+                {/* SLIDE 5: GEMINI */}
+                <Section id="slide-5" className="snap-start h-screen bg-slate-50 dark:bg-slate-900 flex items-center">
                     <div className="max-w-3xl mx-auto px-4">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-5xl font-black mb-4 text-slate-900 dark:text-white">Gemini: Người phản biện</h2>
@@ -339,8 +389,8 @@ function App() {
                     </div>
                 </Section>
 
-                {/* SLIDE 5: CLAUDE AI */}
-                <Section id="slide-5" className="snap-start min-h-screen bg-slate-50 dark:bg-slate-900 py-12">
+                {/* SLIDE 6: CLAUDE AI */}
+                <Section id="slide-6" className="snap-start min-h-screen bg-slate-50 dark:bg-slate-900 py-12">
                     <div className="grid md:grid-cols-2 gap-12 items-center px-4 max-w-6xl mx-auto">
                         <div>
                             <h2 className="text-4xl md:text-5xl font-black mb-6 text-slate-900 dark:text-white">Claude AI: Triển khai</h2>
@@ -396,8 +446,8 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 6: BẢO VỆ */}
-                <Section id="slide-6" className="snap-start h-screen bg-indigo-50/50 dark:bg-indigo-950/20">
+                {/* SLIDE 7: BẢO VỆ */}
+                <Section id="slide-7" className="snap-start h-screen bg-indigo-50/50 dark:bg-indigo-950/20">
                     <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row gap-16 items-center">
                         <div className="md:w-1/2">
                             <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-2xl inline-block mb-6">
@@ -427,8 +477,8 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 7: INVISIBLE AI */}
-                <Section id="slide-7" className="snap-start h-screen bg-white dark:bg-slate-900 flex items-center">
+                {/* SLIDE 8: INVISIBLE AI */}
+                <Section id="slide-8" className="snap-start h-screen bg-white dark:bg-slate-900 flex items-center">
                     <div className="max-w-5xl mx-auto px-4">
                         <div className="text-center mb-12 md:mb-16">
                             <h2 className="text-4xl md:text-6xl font-black mb-4 text-slate-900 dark:text-white">Invisible AI</h2>
@@ -454,8 +504,8 @@ const calculateMatch = (user, dish) => {
                     </div>
                 </Section>
 
-                {/* SLIDE 8: METRICS */}
-                <Section id="slide-8" className="snap-start min-h-screen py-6 md:py-10 flex items-center justify-center">
+                {/* SLIDE 9: METRICS */}
+                <Section id="slide-9" className="snap-start min-h-screen py-6 md:py-10 flex items-center justify-center">
                     <div className="max-w-4xl mx-auto px-4">
                         <div className="text-center mb-6 md:mb-8">
                             <h2 className="text-2xl md:text-4xl font-black mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-emerald-600 dark:from-indigo-400 dark:to-emerald-400">Sức mạnh AI-Driven</h2>
@@ -485,8 +535,8 @@ const calculateMatch = (user, dish) => {
                 </Section>
 
 
-                {/* SLIDE 9: KẾT LUẬN */}
-                <Section id="slide-9" className="snap-start h-screen bg-gradient-to-t from-indigo-50 dark:from-indigo-900/40 to-white dark:to-slate-900">
+                {/* SLIDE 10: KẾT LUẬN */}
+                <Section id="slide-10" className="snap-start h-screen bg-gradient-to-t from-indigo-50 dark:from-indigo-900/40 to-white dark:to-slate-900">
                     <div className="text-center max-w-4xl mx-auto px-4">
                         <motion.div
                             initial={{ rotate: 180, scale: 0 }}
