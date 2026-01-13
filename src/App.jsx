@@ -410,7 +410,7 @@ const calculateMatch = (user, dish) => {
                                 </div>
                                 <h4 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Match Score Dynamic</h4>
                                 <div className="text-4xl md:text-5xl font-black text-emerald-400 mb-4 md:mb-6 group-hover:scale-110 transition-transform inline-block">0 - 100%</div>
-                                <p className="text-slate-400 text-sm md:text-base leading-relaxed">Điểm tương thích hiển và tag giúp User quyết định nhanh chóng.</p>
+                                <p className="text-slate-400 text-sm md:text-base leading-relaxed">Điểm tương thích hiển thị kèm các tag giúp User quyết định nhanh chóng.</p>
                             </div>
                         </div>
                     </div>
@@ -425,7 +425,7 @@ const calculateMatch = (user, dish) => {
                         </div>
                         <div className="space-y-3 md:space-y-4 bg-slate-800/40 p-4 md:p-6 rounded-[24px] border border-slate-700/50 backdrop-blur-md">
                             <MetricBar label="Quy trình truyền thống" value="120 Giờ" percentage={100} color="bg-slate-600" />
-                            <MetricBar label="Phát triển cùng AI Agent" value="16 Giờ" percentage={14} color="bg-gradient-to-r from-indigo-500 to-emerald-400 shadow-[0_0_20px_rgba(99,102,241,0.5)]" />
+                            <MetricBar label="Phát triển cùng AI Agent" value="32 Giờ" percentage={27} color="bg-gradient-to-r from-indigo-500 to-emerald-400 shadow-[0_0_20px_rgba(99,102,241,0.5)]" />
 
                             <div className="mt-6 md:mt-8 text-center">
                                 <motion.div
@@ -433,7 +433,7 @@ const calculateMatch = (user, dish) => {
                                     whileInView={{ scale: 1 }}
                                     className="inline-block p-4 md:p-6 rounded-[24px] md:rounded-[32px] bg-slate-900 border-2 border-indigo-500/50"
                                 >
-                                    <p className="text-4xl md:text-6xl font-black text-white leading-none">87%</p>
+                                    <p className="text-4xl md:text-6xl font-black text-white leading-none">73%</p>
                                     <p className="text-indigo-400 font-bold text-base md:text-lg uppercase tracking-tighter mt-1">Thời gian được tối ưu</p>
                                 </motion.div>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3 mt-6 md:mt-8 text-[10px] md:text-xs font-bold text-slate-400">
