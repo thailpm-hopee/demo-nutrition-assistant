@@ -8,7 +8,7 @@ function App() {
     return (
         <Layout>
             <Routes>
-                <Route path="/" element={<Version1 />} />
+                <Route path="/" element={<Version2 />} />
                 <Route path="/v1" element={<Version1 />} />
                 <Route path="/v2" element={<Version2 />} />
                 {/* Fallback to home */}

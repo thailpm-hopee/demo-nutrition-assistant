@@ -5,14 +5,14 @@ import Section from '../Section';
 // Development time data
 const data = [
     { stage: 'Lên ý tưởng', traditional: 48, ai: 16 },
-    { stage: 'Thiết kế UI/UX', traditional: 32, ai: 8 },
+    { stage: 'Thiết kế UI/UX', traditional: 32, ai: 16 },
     { stage: 'Coding & Logic', traditional: 160, ai: 60 },
     { stage: 'Testing', traditional: 24, ai: 8 },
 ];
 
-const totalTraditional = data.reduce((sum, d) => sum + d.traditional, 0); // 240h
-const totalAI = data.reduce((sum, d) => sum + d.ai, 0); // 80h
-const reductionPercent = (((totalTraditional - totalAI) / totalTraditional) * 100).toFixed(1); // 66.7%
+const totalTraditional = data.reduce((sum, d) => sum + d.traditional, 0); // 264h
+const totalAI = data.reduce((sum, d) => sum + d.ai, 0); // 100h
+const reductionPercent = (((totalTraditional - totalAI) / totalTraditional) * 100).toFixed(1); // 62.1%
 
 const maxHours = Math.max(...data.map(d => d.traditional)); // 160h for scaling
 

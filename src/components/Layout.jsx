@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     return (
         <div className={`min-h-screen ${isDarkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500/30 transition-colors duration-300`}>
             {/* Version Selector */}
-            <div className="fixed top-6 left-6 z-[60]">
+            {/* <div className="fixed top-6 left-6 z-[60]">
                 <select
                     value={location.pathname === '/v2' ? '/v2' : '/v1'}
                     onChange={(e) => window.location.href = e.target.value}
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
                     <option value="/v1">Version 1</option>
                     <option value="/v2">Version 2</option>
                 </select>
-            </div>
+            </div> */}
 
             {/* Theme Toggle */}
             <button
