@@ -16,26 +16,21 @@ const Layout = ({ children }) => {
 
     return (
         <div className={`min-h-screen ${isDarkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500/30 transition-colors duration-300`}>
-            {/* Version Switcher */}
-            <div className="fixed top-6 left-6 z-[60] flex gap-2 p-1 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg">
-                <Link
-                    to="/v1"
-                    className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${location.pathname === '/' || location.pathname === '/v1'
-                            ? 'bg-indigo-500 text-white shadow-md'
-                            : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700'
-                        }`}
+            {/* Version Selector */}
+            <div className="fixed top-6 left-6 z-[60]">
+                <select
+                    value={location.pathname === '/v2' ? '/v2' : '/v1'}
+                    onChange={(e) => window.location.href = e.target.value}
+                    className="px-4 py-2.5 pr-10 rounded-xl text-sm font-bold bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-slate-200 dark:border-slate-700 shadow-lg text-slate-800 dark:text-slate-100 hover:border-indigo-400 dark:hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all cursor-pointer appearance-none bg-no-repeat bg-right"
+                    style={{
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
+                        backgroundPosition: 'right 0.75rem center',
+                        backgroundSize: '1rem'
+                    }}
                 >
-                    V1
-                </Link>
-                <Link
-                    to="/v2"
-                    className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${location.pathname === '/v2'
-                            ? 'bg-indigo-500 text-white shadow-md'
-                            : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700'
-                        }`}
-                >
-                    V2
-                </Link>
+                    <option value="/v1">Version 1</option>
+                    <option value="/v2">Version 2</option>
+                </select>
             </div>
 
             {/* Theme Toggle */}

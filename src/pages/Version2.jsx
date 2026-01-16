@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { SLIDES_V2 } from '../utils/constants';
-import Hero from '../components/v1/Hero';
-import ProblemComparison from '../components/v2/ProblemComparison';
-import IdeationAI from '../components/v2/IdeationAI';
-import DesignProcess from '../components/v2/DesignProcess';
-import ClaudeCode from '../components/v2/ClaudeCode';
-import CursorRefinement from '../components/v2/CursorRefinement';
-import InvisibleAI from '../components/v1/InvisibleAI';
-import Protection from '../components/v1/Protection';
-import Demo from '../components/v1/Demo';
+import Hero from '../components/v2/Hero';
+import FoodQuestion from '../components/v2/FoodQuestion';
+import FoodScanner from '../components/v2/FoodScanner';
+import DiscoverQuestion from '../components/v2/DiscoverQuestion';
+import Discover from '../components/v2/Discover';
+import Roadmap from '../components/v2/Roadmap';
+import DevelopmentComparison from '../components/v2/DevelopmentComparison';
+import Demo from '../components/v2/Demo';
 
 const Version2 = () => {
     const [activeSegment, setActiveSegment] = useState(0);
@@ -29,6 +28,32 @@ const Version2 = () => {
         }
     }, []);
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            const container = document.querySelector('.scroll-container');
+            if (!container) return;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextSlide = Math.min(activeSegment + 1, slides.length - 1);
+                container.scrollTo({
+                    top: nextSlide * window.innerHeight,
+                    behavior: 'smooth'
+                });
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const prevSlide = Math.max(activeSegment - 1, 0);
+                container.scrollTo({
+                    top: prevSlide * window.innerHeight,
+                    behavior: 'smooth'
+                });
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [activeSegment, slides.length]);
+
     return (
         <>
             {/* Navigation Dots */}
@@ -48,30 +73,14 @@ const Version2 = () => {
             </div>
 
             <main className="scroll-container h-screen overflow-y-auto snap-y snap-mandatory">
-                {/* Hero */}
-                <div id="slide-1" className="snap-start"><Hero /></div>
-
-                {/* Part 1: Problem & Solution */}
-                <div id="slide-2" className="snap-start"><ProblemComparison type="grab" /></div>
-                <div id="slide-3" className="snap-start"><ProblemComparison type="maps" /></div>
-
-                {/* Part 2: AI Ideation & Efficiency */}
-                <div id="slide-4" className="snap-start"><IdeationAI slide={1} /></div>
-                <div id="slide-5" className="snap-start"><IdeationAI slide={2} /></div>
-
-                {/* UI/UX Process */}
-                <div id="slide-6" className="snap-start"><DesignProcess /></div>
-
-                {/* Claude Code & Cursor */}
-                <div id="slide-7" className="snap-start"><ClaudeCode /></div>
-                <div id="slide-8" className="snap-start"><CursorRefinement /></div>
-
-                {/* V1 Components maintained in V2 */}
-                <div id="slide-9" className="snap-start"><InvisibleAI /></div>
-                <div id="slide-10" className="snap-start"><Protection /></div>
-
-                {/* Final Demo Lead */}
-                <div id="slide-11" className="snap-start"><Demo /></div>
+                <Hero />
+                <FoodQuestion />
+                <FoodScanner />
+                <DiscoverQuestion />
+                <Discover />
+                <Roadmap />
+                <DevelopmentComparison />
+                <Demo />
             </main>
         </>
     );

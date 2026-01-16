@@ -1,4 +1,4 @@
-import { Rocket, AlertCircle, Zap, BarChart3, MessageSquare, Cpu, ShieldCheck, Eye, Target, ShoppingBag, MapPin, Search, Clock, Palette, Smartphone, MousePointer2 } from 'lucide-react';
+import { Rocket, AlertCircle, Zap, BarChart3, MessageSquare, Cpu, ShieldCheck, Eye, Target, HelpCircle, Scan, Compass, Map, Clock } from 'lucide-react';
 
 export const SLIDES_V1 = [
     { title: "Hero", icon: Rocket },
@@ -14,15 +14,12 @@ export const SLIDES_V1 = [
 ];
 
 export const SLIDES_V2 = [
-    { title: "Hero", icon: Rocket },
-    { title: "Delivery vs AI", icon: ShoppingBag },
-    { title: "Maps vs AI", icon: MapPin },
-    { title: "AI Ideation", icon: Search },
-    { title: "AI Efficiency", icon: Clock },
-    { title: "Design Process", icon: Palette },
-    { title: "Claude Code", icon: Cpu },
-    { title: "Cursor", icon: MousePointer2 },
-    { title: "Invisible AI", icon: Eye },
-    { title: "Bảo vệ", icon: ShieldCheck },
+    { title: "Giới thiệu", icon: Rocket },
+    { title: "Câu hỏi 1", icon: HelpCircle },
+    { title: "Food Scanner", icon: Scan },
+    { title: "Câu hỏi 2", icon: HelpCircle },
+    { title: "Discover", icon: Compass },
+    { title: "Roadmap", icon: Map },
+    { title: "So sánh", icon: Clock },
     { title: "Demo", icon: Target },
 ];
