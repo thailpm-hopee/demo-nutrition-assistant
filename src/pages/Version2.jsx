@@ -8,7 +8,7 @@ import Discover from '../components/v2/Discover';
 import Roadmap from '../components/v2/Roadmap';
 import DevelopmentComparison from '../components/v2/DevelopmentComparison';
 import Demo from '../components/v2/Demo';
-import { ZoomIn, ZoomOut, Maximize2, Minimize2 } from 'lucide-react';
+import { ZoomIn, ZoomOut } from 'lucide-react';
 
 const Version2 = () => {
     const [activeSegment, setActiveSegment] = useState(0);
@@ -123,10 +123,10 @@ const Version2 = () => {
             <main className={`scroll-container h-screen overflow-y-auto ${zoom === 1 ? 'snap-y snap-mandatory' : ''}`}>
                 <div style={{ zoom: zoom }}>
                     <Hero />
-                    <FoodQuestion />
-                    <FoodScanner />
                     <DiscoverQuestion />
                     <Discover />
+                    <FoodQuestion />
+                    <FoodScanner />
                     <Roadmap />
                     <DevelopmentComparison />
                     <Demo />

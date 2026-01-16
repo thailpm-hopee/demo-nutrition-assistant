@@ -61,8 +61,8 @@ const Roadmap = () => (
                     gradient="bg-emerald-500 text-white"
                     delay={0}
                 >
-                    <PhaseItem hasCheck delay={0.1}>Food Scanner</PhaseItem>
-                    <PhaseItem hasCheck delay={0.15}>Discovery</PhaseItem>
+                    <PhaseItem hasCheck delay={0.1}>Discovery</PhaseItem>
+                    <PhaseItem hasCheck delay={0.15}>Food Scanner</PhaseItem>
                     <PhaseItem hasCheck delay={0.2}>Nhập calo thủ công</PhaseItem>
                     <PhaseItem delay={0.25}>Tích hợp Google Maps</PhaseItem>
                 </PhaseCard>
