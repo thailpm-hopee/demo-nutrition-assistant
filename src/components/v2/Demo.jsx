@@ -57,20 +57,7 @@ const Demo = () => (
                 Trải nghiệm <span className="text-indigo-600 dark:text-indigo-400 font-bold">Smart Nutrition Assistant</span> ngay bây giờ.
             </p>
 
-            {/* QR Code */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-            >
-                <QRCodePlaceholder />
-                <p className="text-sm text-slate-500 dark:text-slate-400 mb-8">
-                    Quét mã QR để tải ứng dụng
-                </p>
-            </motion.div>
-
-            <motion.div
+            {/* <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-block"
@@ -81,7 +68,7 @@ const Demo = () => (
                     <Zap className="w-6 h-6" />
                     Bắt đầu Demo
                 </button>
-            </motion.div>
+            </motion.div> */}
         </div>
     </Section>
 );

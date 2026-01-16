@@ -32,11 +32,8 @@ const PhaseCard = ({ title, subtitle, children, gradient, delay = 0 }) => (
         className="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 shadow-lg hover:shadow-xl transition-shadow"
     >
         <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${gradient}`}>
-            {title}
+            {title} {subtitle}
         </div>
-        {subtitle && (
-            <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 font-medium">{subtitle}</p>
-        )}
         <ul className="space-y-3">
             {children}
         </ul>
@@ -60,13 +57,14 @@ const Roadmap = () => (
                 {/* Phase 1 */}
                 <PhaseCard
                     title="PHASE 1"
+                    subtitle="MVP"
                     gradient="bg-emerald-500 text-white"
                     delay={0}
                 >
                     <PhaseItem hasCheck delay={0.1}>Food Scanner</PhaseItem>
                     <PhaseItem hasCheck delay={0.15}>Discovery</PhaseItem>
                     <PhaseItem hasCheck delay={0.2}>Nhập calo thủ công</PhaseItem>
-                    <PhaseItem hasCheck delay={0.25}>Tích hợp Google Maps</PhaseItem>
+                    <PhaseItem delay={0.25}>Tích hợp Google Maps</PhaseItem>
                 </PhaseCard>
 
                 {/* Phase 2 */}
@@ -88,8 +86,8 @@ const Roadmap = () => (
                     gradient="bg-amber-500 text-white"
                     delay={0.4}
                 >
-                    <PhaseItem delay={0.5}>Hệ thống dành cho đối tác nhà hàng</PhaseItem>
-                    <PhaseItem delay={0.55}>Gói Premium cho PT/Cá nhân</PhaseItem>
+                    <PhaseItem delay={0.55}>Hệ thống dành cho đối tác nhà hàng</PhaseItem>
+                    <PhaseItem delay={0.6}>Gói Premium cho PT/Cá nhân</PhaseItem>
                 </PhaseCard>
             </div>
         </div>
